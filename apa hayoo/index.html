@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<!-- <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M20.205 4.791a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412L12 21.414l8.207-8.207c2.354-2.353 2.355-6.049-.002-8.416z'%3E%3C/path%3E%3C/svg%3E"> -->
+
+  <!-- <link rel="apple-touch-icon" href="https://feeldreams.github.io/main-icon.png"> -->
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script><link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+<head>
+  <title>Semangat Ayu ❤️</title>
+</head>
+<body>
+	
+   <div class="overlay">
+     <!-- Teks Loading --><div class="loading-message">Hai kamu!<br>Tunggu dulu ya..</div>
+   </div>
+   
+   <!-- Ganti Audio di Sini, edit url di dalam src -->
+   <audio id="audio" src="audio/audio.mp3"></audio>
+   <!-- Pesan Pertama -->
+   <section class="first">
+       <!-- Background --><div class="wp"><img id="imgsatu" src="https://feeldreams.github.io/maukahkamu/wpsatu.jpg"/></div>
+       <!-- Stiker --><img id="first_stiker" class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
+       
+       <h1 class="title">Hai Ayuuuuuuuu!</h1>
+       <p class="flip">Aku tahu kamu hebat, meskipun hari-hari kadang terasa berat</p>
+       <p class="slide-up">Istirahat yang cukup ya, biar semangatmu selalu menyala!</p>
+  </section>
+  
+  <!-- Pesan Kedua -->
+  <section>
+      <!-- Background --><div class="wp"><img id="imgdua" src="https://feeldreams.github.io/maukahkamu/wpdua.jpg"/></div>
+      <!-- Stiker --><img class="stiker fade-in" src="https://feeldreams.github.io/pusn.gif"/>
+      
+      <h2 class="title">Kamu Sudah Jauh Melangkah</h2>
+      <p class="slide-right">Apa yang kamu lakukan itu luar biasa
+        <br/>Jangan pernah meragukan diri sendiri</p>
+  </section>
+  
+  <!-- Pesan Ketiga dengan Animasi Ngetik -->
+  <section>
+  	<!-- Background --><div class="wp"><img id="imgtiga" src="https://feeldreams.github.io/maukahkamu/wptiga.jpg"/></div>
+      <p id="teksnimasi">Ayuuu, seperti arti dari nama mu... 
+        Kamu pantas mendapatkan semua hal indah yang ada di dunia ini.
+        Semoga besok bisa bangun dengan semangat lagi..!!!</p>
+  </section>
+  
+  <!-- Pesan Keempat dengan Pertanyaan -->
+  <section>
+  	<!-- Background --><div class="wp"><img id="imgempat" src="https://feeldreams.github.io/maukahkamu/wpempat.jpg"/></div>
+      <!-- Stiker --><img class="stiker fade-in" src="https://feeldreams.github.io/bunga.gif"/>
+      
+      <h2 class="title">Boleh minta sesuatu..???</h2>
+      <p class="bold slide-right">Maukah kamu terus tersenyum dan menjaga semangatmu untuk hari esok?</p>
+      
+      <div id="Tombol">
+       <a id="By" onClick="fungsipertama()">Mau Banget! ❤️</a>
+       <a id="Bn" onClick="fungsikedua()">Baiklahh... bakal ku coba 😊</a>
+     </div>
+  </section>
+  
+  <!-- Pesan Akhir, edit di paling bawah di dalam Script -->
+  <section id="iniakhir">
+  	<!-- Background -->
+  	<div class="wp" id="wpakhir"><img src="https://feeldreams.github.io/maukahkamu/wplima.jpg"/></div>
+  	
+  	<!-- Stiker -->
+  	<img id="stikerakhir" class="stiker fade-in" src="https://feeldreams.github.io/g5.gif"/>
+    <img id="stikerakhir2" style="display:none" src="https://feeldreams.github.io/emawh.gif"/>
+  	
+  	<!-- Judul dan Pesan -->
+  	<h1 id="judulakhir"></h1>
+  	<p id="kalimatakhir"></p>
+  	<p id="palingakhir"></p>
+  	
+  	<!-- Tombol WhatsApp -->
+  	<div id="TombolWA">
+        <a href="https://api.whatsapp.com/send?phone=6285179905179&text=Israaa.....%20ayo%20beli%20basso..." target="_blank">
+            Balas ❤️
+        </a>
+    </div>
+</section>
+
+  
+  <div id="initom" class="menu">
+  <a class='tombol' onclick="tes()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/> </svg>
+  </a>
+  </div>
+
+<script>
+// Teks ketika klik tombol Mau
+function fungsipertama(){
+       fungsi=0;tes();
+       teksjudulakhir = "Kamu Hebat, Ayuuu!!!";
+       tekskalimatakhir = "Kutahu kamu bakal pilih ini... Ku bangga mengenal mu. Semangat terus yahh..";
+}
+
+// Teks ketika klik tombol Gamau
+function fungsikedua(){
+       fungsi=0;tes();
+       teksjudulakhir = "Kamu Hebat, Ayuuu!!!";
+       tekskalimatakhir = "Kalau ada apa-apa, aku selalu ada di sini buat kamu. Semangat terus, Ayu! 🌟";
+}
+
+// Teks Akhir
+teksjudulakhir2 = "Baiklaahh... mungkin itu saja";
+tekspalingakhir = "Terima kasih sudah selalu berusaha sebaik ini. Jangan lupa untuk bahagia, ya!";
+  
+// Teks yang akan dikirim ke WhatsApp
+pesanwhatsapp = "Israaa..... ayo beli basso...";
+
+const body = document.querySelector("body"); initom.style="opacity:0;bottom:0;transition:none"; audio = new Audio('' + linkmp3.src); function berjatuhan() {const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90)+"vw"; heart.style.animationDuration = (Math.random()*3)+2+"s"; body.appendChild(heart);} setInterval(function name(params) {var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) {heartArr[0].remove()}},100);
+</script>
+<script src="https://feeldreams.github.io/maukahkamu/main.js"></script>
+</body>
+</html>
